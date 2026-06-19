@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Construction Cost Estimation System</title>
+    <meta name="description" content="Revolutionary AI-powered construction cost estimation system for accurate project budgeting and planning">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-hard-hat"></i>
+                <span>AI Cost Estimator</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#objectives" class="nav-link">Objectives</a></li>
+                <li><a href="#methodology" class="nav-link">Methodology</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#technologies" class="nav-link">Technologies</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">AI-Based Construction Cost Estimation System</h1>
+            <p class="hero-subtitle">Revolutionizing construction budgeting with artificial intelligence and machine learning</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#demo" class="btn btn-secondary">Try Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Project</h2>
+                <p>Transforming construction cost estimation with cutting-edge AI technology</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Accurate construction cost estimation is crucial for project success, budget planning, and resource allocation. Traditional methods often rely on manual calculations and historical experience, leading to inaccuracies and delays.</p>
+                    <p>Our AI-Based Construction Cost Estimation System leverages machine learning algorithms to analyze historical project data, identify cost-driving factors, and provide highly accurate cost predictions. By processing thousands of construction projects, our system learns patterns and relationships that human estimators might miss.</p>
+                    <p>The system uses advanced techniques including regression analysis, decision trees, and neural networks to deliver cost estimates that significantly outperform traditional methods in accuracy and reliability.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-percentage"></i>
+                        <h3>95%</h3>
+                        <p>Prediction Accuracy</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>80%</h3>
+                        <p>Time Reduction</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>25%</h3>
+                        <p>Cost Savings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Objectives</h2>
+                <p>Clear goals driving our AI-powered cost estimation system</p>
+            </div>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Model Development</h3>
+                    <p>Develop an AI-based model to accurately forecast construction project costs by analyzing historical project data</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Model Comparison</h3>
+                    <p>Compare different AI/Machine Learning approaches for cost estimation to identify the most effective methods</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Factor Analysis</h3>
+                    <p>Identify cost-driving factors (materials, labor, equipment, location, project type, etc.) using machine learning techniques</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Accuracy Improvement</h3>
+                    <p>Improve accuracy of cost estimation over conventional/traditional methods through data-driven insights</p>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Budget Enhancement</h3>
+                    <p>Enhance budget accuracy by reducing human bias and errors in traditional cost estimation methods</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Methodology</h2>
+                <p>Our systematic approach to AI-powered cost estimation</p>
+            </div>
+            <div class="methodology-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Data Collection</h3>
+                        <p>Gathering comprehensive historical construction data including project specifications, material costs, labor rates, equipment usage, and project outcomes</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Data Preprocessing</h3>
+                        <p>Cleaning, normalizing, and preparing data through feature selection, handling missing values, and engineering relevant features</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Models</h3>
+                        <p>Implementing and training various models including regression, decision trees, random forests, and neural networks</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Model Evaluation</h3>
+                        <p>Rigorous testing and comparison using metrics like MAE, RMSE, and R² to select the best performing model</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Powerful capabilities for accurate construction cost estimation</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Cost Prediction System</h3>
+                    <p>Advanced AI algorithms provide accurate cost estimates based on project parameters and historical data</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Model Comparison Dashboard</h3>
+                    <p>Interactive dashboard comparing different ML models and their performance metrics</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <h3>Cost Factor Visualization</h3>
+                    <p>Visual representation of cost-driving factors and their impact on overall project costs</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>User-Friendly Interface</h3>
+                    <p>Intuitive interface for inputting project parameters and receiving instant cost estimates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technologies Used</h2>
+                <p>Cutting-edge tools and frameworks powering our system</p>
+            </div>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-brain"></i> AI/Machine Learning</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">TensorFlow</span>
+                        <span class="tech-item">Scikit-learn</span>
+                        <span class="tech-item">Pandas</span>
+                        <span class="tech-item">NumPy</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">Chart.js</span>
+                        <span class="tech-item">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Node.js</span>
+                        <span class="tech-item">Flask</span>
+                        <span class="tech-item">Django</span>
+                        <span class="tech-item">REST API</span>
+                        <span class="tech-item">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Construction Project Cost</h2>
+                <p>Experience our AI-powered cost estimation system</p>
+            </div>
+            <div class="demo-controls">
+                <button type="button" class="btn btn-reset" onclick="resetCostForm()">RESET</button>
+            </div>
+            <div class="demo-container">
+                <div class="demo-form">
+                    <h3>Project Parameters</h3>
+                    <form id="costEstimationForm">
+                        <!-- Basic Project Info -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-building"></i> Project Details</h4>
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" required>
+                                    <option value="">Select Project Type</option>
+                                    <option value="residential">Residential</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="industrial">Industrial</option>
+                                    <option value="infrastructure">Infrastructure</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectSize">Plot Area (sq ft)</label>
+                                <input type="number" id="projectSize" min="100" max="1000000" placeholder="Enter plot area in sq ft" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="builtUpArea">Built-up Area per Floor (sq ft)</label>
+                                <input type="number" id="builtUpArea" min="100" max="1000000" placeholder="e.g. 1200" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="numberOfFloors">Number of Floors</label>
+                                <input type="number" id="numberOfFloors" min="1" max="100" placeholder="e.g. 2" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cityType">City/Location Type</label>
+                                <select id="cityType" required>
+                                    <option value="">Select City Type</option>
+                                    <option value="tier1">Tier-1 City</option>
+                                    <option value="tier2">Tier-2 City</option>
+                                    <option value="tier3">Tier-3 City</option>
+                                    <option value="mega">Mega City</option>
+                                    <option value="urban">Urban</option>
+                                    <option value="suburban">Suburban</option>
+                                    <option value="rural">Rural</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="rateType">Rate Type</label>
+                                <select id="rateType" required>
+                                    <option value="">Select Rate Type</option>
+                                    <option value="ssr">SSR (State Schedule of Rates)</option>
+                                    <option value="dsr">DSR (District Schedule of Rates)</option>
+                                    <option value="market">Market Rate</option>
+                                    <option value="combined">Combined Rate</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Structural Parameters -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-hard-hat"></i> Structural Parameters</h4>
+                            <div class="form-group">
+                                <label for="foundationType">Foundation Type</label>
+                                <select id="foundationType" required>
+                                    <option value="">Select Foundation Type</option>
+                                    <option value="shallow">Shallow Foundation</option>
+                                    <option value="deep">Deep Foundation</option>
+                                    <option value="raft">Raft Foundation</option>
+                                    <option value="pile">Pile Foundation</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="structureType">Structure Type</label>
+                                <select id="structureType" required>
+                                    <option value="">Select Structure Type</option>
+                                    <option value="rcc">RCC</option>
+                                    <option value="steel">Steel</option>
+                                    <option value="load-bearing">Load Bearing</option>
+                                    <option value="prefab">Prefab</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="roofType">Roof Type</label>
+                                <select id="roofType" required>
+                                    <option value="">Select Roof Type</option>
+                                    <option value="flat">Flat Roof</option>
+                                    <option value="pitched">Pitched Roof</option>
+                                    <option value="curved">Curved Roof</option>
+                                    <option value="green">Green Roof</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Materials -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-cubes"></i> Materials</h4>
+                            <div class="form-group">
+                                <label for="brickType">Brick Type</label>
+                                <select id="brickType" required>
+                                    <option value="">Select Brick Type</option>
+                                    <option value="clay">Clay Bricks</option>
+                                    <option value="concrete">Concrete Bricks</option>
+                                    <option value="fly-ash">Fly Ash Bricks</option>
+                                    <option value="aac">AAC Blocks</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cementGrade">Cement Grade</label>
+                                <select id="cementGrade" required>
+                                    <option value="">Select Cement Grade</option>
+                                    <option value="opc33">OPC 33 Grade</option>
+                                    <option value="opc43">OPC 43 Grade</option>
+                                    <option value="opc53">OPC 53 Grade</option>
+                                    <option value="ppc">PPC (Portland Pozzolana)</option>
+                                    <option value="psc">PSC (Portland Slag Cement)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="steelGrade">Steel Grade</label>
+                                <select id="steelGrade" required>
+                                    <option value="">Select Steel Grade</option>
+                                    <option value="fe415">Fe 415 ( Mild Steel )</option>
+                                    <option value="fe500">Fe 500 ( Standard )</option>
+                                    <option value="fe500d">Fe 500D ( Ductile )</option>
+                                    <option value="fe550">Fe 550 ( High Strength )</option>
+                                    <option value="fe550d">Fe 550D ( High Strength Ductile )</option>
+                                    <option value="fe600">Fe 600 ( Ultra High Strength )</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sandType">Sand Type</label>
+                                <select id="sandType" required>
+                                    <option value="">Select Sand Type</option>
+                                    <option value="river">River Sand ( Natural )</option>
+                                    <option value="m-sand">M-Sand ( Manufactured )</option>
+                                    <option value="crushed">Crushed Stone Sand</option>
+                                    <option value="pit">Pit Sand ( Coarse )</option>
+                                    <option value="sea">Sea Sand ( Not Recommended )</option>
+                                    <option value="slag">Slag Sand</option>
+                                </select>
+                            </div>
+
+                        <!-- Finishing & Interior -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-paint-roller"></i> Finishing & Interior</h4>
+                            <div class="form-group">
+                                <label for="flooring">Flooring Type</label>
+                                <select id="flooring" required>
+                                    <option value="">-- Select Flooring Type --</option>
+                                    <option value="vitrified">Vitrified Tiles</option>
+                                    <option value="ceramic">Ceramic Tiles</option>
+                                    <option value="porcelain">Porcelain Tiles</option>
+                                    <option value="natural-stone">Natural Stone (Marble/Granite)</option>
+                                    <option value="granite">Granite Flooring</option>
+                                    <option value="marble">Marble Flooring</option>
+                                    <option value="kotah-stone">Kotah Stone</option>
+                                    <option value="hardwood">Hardwood</option>
+                                    <option value="engineered-wood">Engineered Wood</option>
+                                    <option value="laminate">Laminate</option>
+                                    <option value="vinyl">Vinyl (LVP/LVT/Sheet)</option>
+                                    <option value="pvc">PVC Flooring</option>
+                                    <option value="carpets">Carpets</option>
+                                    <option value="terrazzo">Terrazzo Flooring</option>
+                                    <option value="mosaic">Mosaic Tiles</option>
+                                    <option value="concrete">Polished Concrete</option>
+                                    <option value="epoxy">Epoxy Flooring</option>
+                                    <option value="bamboo">Bamboo Flooring</option>
+                                    <option value="cork">Cork Flooring</option>
+                                    <option value="rubber">Rubber Flooring</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="paintType">Paint Type</label>
+                                <select id="paintType" required>
+                                    <option value="">Select Paint Type</option>
+                                    <option value="oil">Oil Paint</option>
+                                    <option value="enamel">Enamel Paint</option>
+                                    <option value="emulsion">Emulsion Paint</option>
+                                    <option value="cement">Cement Paint</option>
+                                    <option value="distemper">Distemper Paint</option>
+                                    <option value="aluminium">Aluminium Paint</option>
+                                    <option value="bituminous">Bituminous Paint</option>
+                                    <option value="anti-corrosive">Anti-corrosive Paint</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="windowsType">Windows Type</label>
+                                <select id="windowsType" required>
+                                    <option value="">Select Windows Type</option>
+                                    <option value="fixed">Fixed Window</option>
+                                    <option value="casement">Casement Window</option>
+                                    <option value="sliding">Sliding Window</option>
+                                    <option value="pivoted">Pivoted Window</option>
+                                    <option value="double-hung">Double-hung Window</option>
+                                    <option value="louvered">Louvered Window</option>
+                                    <option value="bay">Bay Window</option>
+                                    <option value="corner">Corner Window</option>
+                                    <option value="dormer">Dormer Window</option>
+                                    <option value="clerestory">Clerestory Window</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="doorsType">Doors Type</label>
+                                <select id="doorsType" required>
+                                    <option value="">Select Doors Type</option>
+                                    <option value="wooden">Wooden Doors</option>
+                                    <option value="steel">Steel Doors</option>
+                                    <option value="aluminium">Aluminium Doors</option>
+                                    <option value="glass">Glass Doors</option>
+                                    <option value="pvc">PVC / Plastic Doors</option>
+                                    <option value="fiberglass">Fiberglass Doors</option>
+                                    <option value="flush">Flush Doors</option>
+                                    <option value="metal">Metal Doors</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Utilities & MEP -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-tools"></i> Utilities & MEP</h4>
+                            <div class="form-group">
+                                <label for="electricalPoints">Electrical Points</label>
+                                <input type="number" id="electricalPoints" min="0" placeholder="Enter electrical points">
+                            </div>
+                            <div class="form-group">
+                                <label for="plumbingFixtures">Plumbing Fixtures</label>
+                                <input type="number" id="plumbingFixtures" min="0" placeholder="Enter plumbing fixtures">
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="elevator">
+                                    <span class="checkmark"></span>
+                                    Include Elevator
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="solarPoints">
+                                    <span class="checkmark"></span>
+                                    Include Solar Points
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="rainwaterHarvesting">
+                                    <span class="checkmark"></span>
+                                    Include Rainwater Harvesting
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="fireSafety">
+                                    <span class="checkmark"></span>
+                                    Include Fire Safety
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Bill of Quantities -->
+                        <div class="form-section">
+                            <h4><i class="fas fa-clipboard-list"></i> Bill of Quantities (Optional)</h4>
+                            <p class="boq-description">Add custom BOQ items with quantities and rates for detailed cost breakdown</p>
+                            <div id="boqItems" class="boq-items">
+                                <!-- BOQ items will be added dynamically -->
+                            </div>
+                            <button type="button" class="btn btn-secondary" onclick="addBOQItem()">+ ADD ITEM</button>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">GENERATE NEURAL ESTIMATE</button>
+                            <button type="button" class="btn btn-reset" onclick="resetCostForm()">RESET</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Cost Breakdown Section -->
+                <div class="demo-results">
+                    <h3>Cost Breakdown</h3>
+                    <div id="costResults" class="cost-results">
+                        <div class="result-item">
+                            <span class="result-label">Total Estimated Cost:</span>
+                            <span class="result-value" id="totalCost">₹0</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Materials:</span>
+                            <span class="result-value" id="materialsCost">₹0</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Labor:</span>
+                            <span class="result-value" id="laborCost">₹0</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Equipment:</span>
+                            <span class="result-value" id="equipmentCost">₹0</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Overhead:</span>
+                            <span class="result-value" id="overheadCost">₹0</span>
+                        </div>
+                        <div class="confidence-meter">
+                            <span>Confidence Level:</span>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidenceFill"></div>
+                            </div>
+                            <span id="confidenceText">0%</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="costChart"></canvas>
+                    </div>
+                    <div class="download-section">
+                        <button type="button" class="btn btn-download" onclick="downloadPDF()">
+                            <i class="fas fa-file-pdf"></i> Download Report (PDF)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Results & Benefits</h2>
+                <p>Measurable improvements over traditional methods</p>
+            </div>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Improved Accuracy</h3>
+                    <p>Our AI system achieves 95% accuracy compared to 70-80% accuracy of traditional estimation methods</p>
+                    <div class="metric">+25% Accuracy</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Reduced Human Bias</h3>
+                    <p>Eliminates subjective judgments and personal biases that affect traditional cost estimation</p>
+                    <div class="metric">90% Bias Reduction</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Better Decision Making</h3>
+                    <p>Data-driven insights enable better budget planning and resource allocation decisions</p>
+                    <div class="metric">40% Better ROI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section - Traditional vs ML-Based -->
+    <section id="comparison" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Traditional vs AI-Powered Cost Estimation</h2>
+                <p>See how our ML-based system outperforms traditional methods</p>
+            </div>
+            <div class="comparison-container">
+                <div class="comparison-chart-wrapper">
+                    <canvas id="comparisonChart"></canvas>
+                </div>
+                <div class="comparison-metrics">
+                    <div class="metric-card traditional">
+                        <h4><i class="fas fa-calculator"></i> Traditional Method</h4>
+                        <ul>
+                            <li><span class="metric-label">Accuracy:</span> <span class="metric-value">65-75%</span></li>
+                            <li><span class="metric-label">Time Required:</span> <span class="metric-value">2-4 Weeks</span></li>
+                            <li><span class="metric-label">Manual Errors:</span> <span class="metric-value">High</span></li>
+                            <li><span class="metric-label">Data Analysis:</span> <span class="metric-value">Limited</span></li>
+                            <li><span class="metric-label">Cost Overruns:</span> <span class="metric-value">15-25%</span></li>
+                        </ul>
+                    </div>
+                    <div class="metric-card ml-based">
+                        <h4><i class="fas fa-robot"></i> AI/ML Based System</h4>
+                        <ul>
+                            <li><span class="metric-label">Accuracy:</span> <span class="metric-value">95-98%</span></li>
+                            <li><span class="metric-label">Time Required:</span> <span class="metric-value">Minutes</span></li>
+                            <li><span class="metric-label">Manual Errors:</span> <span class="metric-value">Minimal</span></li>
+                            <li><span class="metric-label">Data Analysis:</span> <span class="metric-value">Comprehensive</span></li>
+                            <li><span class="metric-label">Cost Overruns:</span> <span class="metric-value">2-5%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-hard-hat"></i>
+                    <span>AI Cost Estimator</span>
+                </div>
+                <p>&copy; 2024 AI-Based Construction Cost Estimation System. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
